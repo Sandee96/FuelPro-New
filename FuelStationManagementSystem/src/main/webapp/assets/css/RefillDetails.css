@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    background-image: url('../images/RefillBG.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background */
+}
+
+.container {
+    width: 400px; /* Fixed width for a square form */
+    height: 400px; /* Fixed height for a square form */
+    background: rgba(255, 255, 255, 0.8); /* Increased transparency */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Enable flexbox for even spacing */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Evenly distribute space between items */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 20px; /* Reduced font size for the heading */
+    margin-bottom: 10px; /* Margin below the heading */
+}
+
+p {
+    color: #333;
+    margin: 5px 0; /* Margin for paragraphs */
+}
+
+button {
+    background-color: #FF5733; /* Default button color */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px; /* Margin above the button */
+}
+
+button:hover {
+    background-color: #C70039; /* Darker shade on hover */
+}
+
+.message {
+    color: red; /* Color for error messages */
+    text-align: center; /* Center the message */
+    margin-top: 10px; /* Margin above the message */
+}

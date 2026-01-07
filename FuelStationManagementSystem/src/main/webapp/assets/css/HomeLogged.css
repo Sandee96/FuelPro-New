@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/Home_Background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #111; /* Match header/footer tone */
+    padding: 30px; /* Increased height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white; /* White text for all links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.navbar a:hover {
+    color: #bbb; /* Grey hover color for navbar links */
+}
+
+.logout-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white; /* White text for user login status */
+}
+
+.wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.description {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+}
+
+.description h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: white; /* Changed the title to white */
+}
+
+.description p {
+    margin: 10px 0;
+    color: white; /* White text for paragraph */
+    line-height: 1.6;
+}
+
+/* New updates box styling */
+.updates-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.update-box {
+    width: 30%;
+    padding: 40px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s, background-color 0.3s, border-color 0.3s; /* Added border color transition */
+    cursor: pointer;
+    color: white; /* White text for update boxes */
+}
+
+.update-box:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 123, 255, 0.8);
+    border-color: #bbb; /* Grey hover color for update boxes */
+}
+
+.update-box h2 {
+    color: white; /* White text for box headers */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.update-box p {
+    color: white; /* White text for box descriptions */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px; /* Increased height */
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+}
